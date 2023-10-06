@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reverse: Frame Animation Painter</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="codemirror-5.65.15/lib/codemirror.css">
+
+    <script src="./codemirror-5.65.15/lib/codemirror.js"></script>
+    <script src="./codemirror-5.65.15/mode/javascript/javascript.js"></script>
+    <script type="text/javascript" src="./script.js" defer></script>
+</head>
+<body>
+    <header>
+        <!-- Header content here (logo, title, branding) -->
+    </header>
+    
+    <main>
+        <section id="code-editor">
+            <!-- Code editor content here -->
+            <textarea id="editor"></textarea>
+        </section>
+        
+        <section id="working-area">
+            <!-- Working area content here -->
+            <div id="live-preview">
+                <canvas id="animation-canvas"></canvas>
+                <div id="preview"></div>
+            </div>
+            <div id="transport-controls">
+                <!-- Transport controls and export options here -->
+                <button class="transport-button play">Play</button>
+                <button class="transport-button" onclick="pauseAnimation()">Pause</button>
+                <button class="transport-button" onclick="prevFrame()">Previous Frame</button>
+                <button class="transport-button" onclick="nextFrame()">Next Frame</button>
+            </div>
+        </section>
+    </main>
+
+    <section id="timeline">
+        <!-- Timeline content here -->
+        <div class="film-reel">
+            <!-- Add frame representation here-->
+            <div class="frame"></div>
+            <div class="frame"></div>
+            <div class="frame"></div>
+        </div>
+        <section id="timeline-controls">
+            <button id="execute-timeline">Execute Timeline</button>
+            <button id="create-frame">Create New Frame</button>
+        </section>
+    </section>
+    
+    <footer>
+        <!-- Transport controls and export options here -->
+    </footer>
+</body>
+</html>
