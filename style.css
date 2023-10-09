@@ -80,68 +80,6 @@ section {
     margin: 0 5px;
 }
 
-
-/* Style the timeline area */
-#timeline {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 10px; /* Adjust the padding as needed */
-    display: flex; /* Make it a flex container */
-    justify-content: center; /* Space items horizontaly */
-    align-items: center; /* Center items vertically */
-    position: absolute; /* Position it at the bottom */
-    bottom: 0px; /* Adjust the distance from the bottom as needed */
-    left: 0px; /* Adjust the distance from the left as needed */
-    right: 0px; /* Adjust the distance from the right as needed */
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-#timeline-controls {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.film-reel {
-    display: flex;
-    gap: 10px; /* Adjust the gap between frames */
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.frame {
-    width: 40px; /* Adjust frame width */
-    height: 40px; /* Adjust frame height */
-    background-color: #3498db; /* Frame color */
-    cursor: pointer; /* Change cursor to pointer */
-    /* Add any other frame styling as needed */
-}
-
-#execute-timeline {
-    /* margin-left: 20px; /* Adjust button position */
-    padding: 5px 10px;
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-#create-frame {
-    padding: 5px 10px;
-    background-color: #27ae60;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;    
-}
-
 footer {
     background-color: #333;
     color: #fff;
@@ -149,4 +87,57 @@ footer {
     text-align: center;
 }
 
-/* Style transport controls and export options as needed */
+/* Style the film reel */
+.film-reel {
+    display: flex;
+    gap: 10px; /* Adjust the gap between frames */
+    justify-content: flex-start;
+}
+
+/* Style individual frames */
+.frame {
+    width: 40px; /* Adjust frame width */
+    height: 40px; /* Adjust frame height */
+    background-color: #3498db; /* Frame color */
+    cursor: pointer; /* Change cursor to pointer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+/* Style the selected frame */
+.frame.selected {
+    background-color: #27ae60; /* Change color for the selected frame */
+    color: #fff; /* Text color for the selected frame */
+}
+
+#timeline-controls {
+    background-color: #fff;
+    border: 1px solid #ccc;
+	border-radius: 5px;
+    padding: 5px; /* Adjust the padding as needed */
+    display: flex; /* Make it a flex container */
+    justify-content: flex-start; /* Space items horizontaly */
+    align-items: center; /* Center items vertically */
+    position: absolute; /* Position it at the bottom */
+    bottom: 0px; /* Adjust the distance from the bottom as needed */
+    left: 0px; /* Adjust the distance from the left as needed */
+    right: 0px; /* Adjust the distance from the right as needed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the buttons */
+button {
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    margin: 0 5px;
+}
