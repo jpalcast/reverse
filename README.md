@@ -1,5 +1,4 @@
-reverse: frame animation painter
-prototype version 0.0.0.2
+reverse: frame animation painter / prototype version 0.0.0.2
 
 Este pequeño proyecto pretende una aplicación web que permita crear y editar frames de
 animación utilizando JavaScript con una interface similar a la de un editor de video
