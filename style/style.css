@@ -1,0 +1,143 @@
+/* Reset some default browser styles */
+html, body, div, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    overflow: hidden; /* Prevent scrolling beyond the viewport */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+section {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the code editor area */
+#code-editor {
+    flex: 2; /* Adjust the width as needed */
+}
+
+/* Style the live workinf area */
+#working-area {
+    flex: 2; /* Adjust the width as needed */
+}
+
+/* Style the live preview area */
+#live-preview {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 2; /* Adjust flex value as needed */
+}
+
+/* Add your styles for the animation canvas*/
+#animation-canvas {
+    width: 256px;
+    height: 224px;
+    border: 1px solid #ccc;
+}
+
+/* Add your styles for the preview area here */
+#preview {
+    width: 256px;
+    height: 224px;
+    background-color: #3498db;
+    transition: background-color 0.3s ease;
+}
+
+#transport-controls {
+    /* Transport controls styles */
+    text-align: center; /* Center the controls horizontaly */
+    padding: 10px; /* Add spacing as needed */
+}
+
+.transport-button {
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    margin: 0 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style the film reel */
+.film-reel {
+    display: flex;
+    gap: 10px; /* Adjust the gap between frames */
+    justify-content: flex-start;
+}
+
+/* Style individual frames */
+.frame {
+    width: 40px; /* Adjust frame width */
+    height: 40px; /* Adjust frame height */
+    background-color: #3498db; /* Frame color */
+    cursor: pointer; /* Change cursor to pointer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+/* Style the selected frame */
+.frame.selected {
+    background-color: #27ae60; /* Change color for the selected frame */
+    color: #fff; /* Text color for the selected frame */
+}
+
+#timeline-controls {
+    background-color: #fff;
+    border: 1px solid #ccc;
+	border-radius: 5px;
+    padding: 5px; /* Adjust the padding as needed */
+    display: flex; /* Make it a flex container */
+    justify-content: flex-start; /* Space items horizontaly */
+    align-items: center; /* Center items vertically */
+    position: absolute; /* Position it at the bottom */
+    bottom: 0px; /* Adjust the distance from the bottom as needed */
+    left: 0px; /* Adjust the distance from the left as needed */
+    right: 0px; /* Adjust the distance from the right as needed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the buttons */
+button {
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    margin: 0 5px;
+}
