@@ -6,12 +6,12 @@
 
     <title>Reverse: Frame Animation Painter</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="codemirror-5.65.15/lib/codemirror.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./lib/codemirror-5.65.15/lib/codemirror.css">
 
-    <script src="./codemirror-5.65.15/lib/codemirror.js"></script>
-    <script src="./codemirror-5.65.15/mode/javascript/javascript.js"></script>
-    <script type="text/javascript" src="./script.js" defer></script>
+    <script src="./lib/codemirror-5.65.15/lib/codemirror.js"></script>
+    <script src="./lib/codemirror-5.65.15/mode/javascript/javascript.js"></script>
+    <script type="text/javascript" src="./script/script.js" defer></script>
 </head>
 <body>
     <header>
@@ -39,23 +39,22 @@
             </div>
         </section>
     </main>
-
-    <section id="timeline">
-        <!-- Timeline content here -->
-        <div class="film-reel">
-            <!-- Add frame representation here-->
-            <div class="frame"></div>
-            <div class="frame"></div>
-            <div class="frame"></div>
-        </div>
-        <section id="timeline-controls">
-            <button id="execute-timeline">Execute Timeline</button>
-            <button id="create-frame">Create New Frame</button>
-        </section>
-    </section>
-    
     <footer>
-        <!-- Transport controls and export options here -->
+    <div class="film-reel">
+        <!-- Add frame representation here-->
+        <!-- Example frames: -->
+        <div class="frame selected" data-frame-index="0">1</div>
+        <div class="frame" data-frame-index="1">2</div>
+        <div class="frame" data-frame-index="2">3</div>
+    </div>
     </footer>
+    <section id="timeline-controls">
+        <button id="play-reel">Play Reel</button>
+        <button id="save-frame">Save Frame</button>
+        <button id="add-frame">Add Frame</button>
+        <button id="delete-frame">Delete Frame</button>
+        <button id="save-timeline">Save Timeline</button>
+        <input type="file" id="load-timeline" accept=".json">
+    </section>
 </body>
 </html>
